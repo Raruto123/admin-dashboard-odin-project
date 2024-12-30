@@ -2,6 +2,7 @@
     font-size: 100%;
     font-family: Roboto-Regular;
     --white-color:white;
+    --left-content-background-color:blue;
 }
 
 @font-face {
@@ -19,7 +20,7 @@
 }
 
 .container > div:not([class*="right-content"]) {
-    background-color: red;
+    background-color: var(--left-content-background-color);
 }
 .left-grid-container {
     height: 100vh;
@@ -30,8 +31,18 @@
 }
 
 
-.left-grid-item1 {
+.left-grid-item1{
     display: flex;
+    color:var(--white-color);
+}
+
+.left-grid-item2 {
+}
+
+.left-grid-item2 div {
+    display: flex;
+    font-size: 0.7rem;
+    color: var(--white-color);
 }
 
 div[class*="left-grid-item"] {
