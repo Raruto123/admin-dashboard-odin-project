@@ -1,0 +1,39 @@
+:root {
+    font-size: 100%;
+    font-family: Roboto-Regular;
+    --white-color:white;
+}
+
+@font-face {
+    font-family: Roboto-Regular ;
+    src: url(Roboto-Regular.ttf);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container > div:not([class*="right-content"]) {
+    background-color: red;
+}
+.left-grid-container {
+    height: 100vh;
+    width: 15vw;
+    display: grid;
+    grid-template-rows: 50px 200px 100px;
+    gap: 75px;
+}
+
+
+.left-grid-item1 {
+    display: flex;
+}
+
+div[class*="left-grid-item"] {
+    outline: 1px solid blue;
+}
