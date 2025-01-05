@@ -3,6 +3,7 @@
     font-family: Roboto-Regular;
     --white-color:white;
     --left-content-background-color:blue;
+    --left-grid-container-width:15vw;
 }
 
 @font-face {
@@ -24,7 +25,7 @@
 }
 .left-grid-container {
     height: 100vh;
-    width: 15vw;
+    width: var(--left-grid-container-width);
     display: grid;
     grid-template-rows: 50px 200px 100px;
     gap: 75px;
@@ -36,15 +37,19 @@
     color:var(--white-color);
 }
 
-.left-grid-item2 {
-}
+/* .left-grid-item2 {
+} */
 
-.left-grid-item2 div {
+.left-grid-item2 div, .left-grid-item3 div {
     display: flex;
     font-size: 0.7rem;
     color: var(--white-color);
 }
 
 div[class*="left-grid-item"] {
-    outline: 1px solid blue;
+    outline: 1px solid red;
+}
+
+div[class*="left-grid-item"] svg, div[class*="left-grid-item"] p:not(.left-grid-item1 > p) {
+    margin-left: 1.5vw;
 }
