@@ -60,3 +60,20 @@ div[class*="left-grid-item"] svg, div[class*="left-grid-item"] p:not(.left-grid-
 .left-grid-item1 p {
     margin-left: 0.5vw;
 }
+
+
+.right-content-up {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
+}
+
+div[class*="up-grid-item"] {
+    outline: 1px solid red;
+
+}
+
+.up-grid-item5 {
+    grid-column: 1/3;
+
+}
