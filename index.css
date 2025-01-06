@@ -2,8 +2,8 @@
     font-size: 100%;
     font-family: Roboto-Regular;
     --white-color:white;
-    --left-content-background-color:blue;
-    --left-grid-container-width:15vw;
+    --left-content-background-color:#1B9CD9;
+    --left-grid-container-width:20vw;
 }
 
 @font-face {
@@ -17,7 +17,6 @@
     left: 50%;
     translate: -50% -50%;
     display: flex;
-    flex-direction: row;
 }
 
 .container > div:not([class*="right-content"]) {
@@ -27,14 +26,17 @@
     height: 100vh;
     width: var(--left-grid-container-width);
     display: grid;
-    grid-template-rows: 50px 200px 100px;
-    gap: 75px;
+    grid-template-rows: 50px 270px 130px;
+    gap: 55px;
+    font-weight: 600;
 }
 
 
 .left-grid-item1{
     display: flex;
+    align-items: center;
     color:var(--white-color);
+    font-size: 1.5rem;
 }
 
 /* .left-grid-item2 {
@@ -42,14 +44,19 @@
 
 .left-grid-item2 div, .left-grid-item3 div {
     display: flex;
-    font-size: 0.7rem;
+    align-items: center;
+    font-size: 0.9rem;
     color: var(--white-color);
 }
 
-div[class*="left-grid-item"] {
+/* div[class*="left-grid-item"] {
     outline: 1px solid red;
-}
+} */
 
 div[class*="left-grid-item"] svg, div[class*="left-grid-item"] p:not(.left-grid-item1 > p) {
     margin-left: 1.5vw;
+}
+
+.left-grid-item1 p {
+    margin-left: 0.5vw;
 }
