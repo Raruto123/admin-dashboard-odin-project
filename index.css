@@ -160,6 +160,18 @@ button {
     justify-content: space-between;
 }
 
+.grid-titles p{
+    font-weight: 600;
+}
+
+.grid-titles p:first-child{
+    margin-left: 10px;
+}
+
+.grid-titles p:nth-child(2) {
+    margin-right: 100px;
+}
+
 .right-content-down-left-and-right-container {
     display: flex;
     justify-content: space-between;
@@ -175,6 +187,7 @@ button {
 
 div[class*="down-left-grid-item"] {
     outline: 1px solid blue;
+    border-radius: 5px;
 }
 
 .right-content-down-right-grid-container{
@@ -182,6 +195,7 @@ div[class*="down-left-grid-item"] {
     outline: 1px solid green;
     grid-template-columns: 210px;
     grid-template-rows: 220px 40px 290px;
+    gap:5px;
 }
 
 div[class*="down-right-grid-item"] {
