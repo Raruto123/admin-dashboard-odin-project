@@ -12,6 +12,11 @@
     src: url(Roboto-Regular.ttf);
 }
 
+@font-face{
+    font-family: Roboto-Light;
+    src: url(Roboto-Light.ttf);
+}
+
 .container {
     position: absolute;
     top: 50%;
@@ -188,6 +193,16 @@ button {
 div[class*="down-left-grid-item"] {
     outline: 1px solid blue;
     border-radius: 5px;
+    border-left: 5px solid yellow;
+    background-color: var(--white-color);
+}
+
+div[class*="down-left-grid-item"] p:first-child {
+    font-weight: 600;
+}
+
+div[class*="down-left-grid-item"] p:nth-child(2) {
+    font-family: Roboto-Light;
 }
 
 .right-content-down-right-grid-container{
