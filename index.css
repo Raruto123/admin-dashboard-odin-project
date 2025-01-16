@@ -195,14 +195,42 @@ div[class*="down-left-grid-item"] {
     border-radius: 5px;
     border-left: 5px solid yellow;
     background-color: var(--white-color);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
 }
 
 div[class*="down-left-grid-item"] p:first-child {
     font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 25px;
 }
 
 div[class*="down-left-grid-item"] p:nth-child(2) {
     font-family: Roboto-Light;
+    font-size: 0.8rem;
+}
+
+.upper-part p:first-child, .upper-part p:nth-child(2), .upper-part {
+    /* outline: 1px solid red; */
+}
+
+.upper-part {
+    /* outline: 1px solid yellow; */
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+.upper-part p:first-child {
+    margin-bottom: -10px;
+}
+
+.lower-part {
+    display: flex;
+    justify-content: end;
+    /* outline: 1px solid red; */
 }
 
 .right-content-down-right-grid-container{
